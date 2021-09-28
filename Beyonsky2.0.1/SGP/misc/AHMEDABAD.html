@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>product solutions.</title>
+	<link rel="icon" sizes="114x114" href="l.png">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-state=1"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+     <!--    languages-->
+
+    <script type="text/javascript">
+        var arrLang = new Array();
+        arrLang['en'] = new Array();
+        arrLang['hi'] = new Array();
+        arrLang['en']['Ahmedabad'] = 'Ahmedabad';
+        arrLang['en']['Restaurants'] = 'Restaurants';
+        arrLang['en']['near'] = 'Restaurants Near Me';
+        arrLang['en']['text'] = 'A snack-shot of the year that was and the new places we loved.';
+        arrLang['en']['rest'] = 'Mr.Indian Restaurant';
+        arrLang['en']['rt'] = 'Other Restaurants';
+        arrLang['en']['re'] = 'Restaurants In The City';
+        arrLang['en']['r'] = 'Restaurents In The State';
+        arrLang['en']['t'] = 'Two Fat Indians';
+        arrLang['en']['s'] = 'Saffron';
+        arrLang['en']['ra'] = 'Ravi Restaurants';
+       
+
+
+
+
+
+
+
+        arrLang['hi']['Ahmedabad'] = 'अहमदाबाद';
+        arrLang['hi']['Restaurants'] = 'रेस्टोरेंट';
+        arrLang['hi']['near'] = 'मेरे पास रेस्टोरेंट';
+        arrLang['hi']['text'] = 'उस वर्ष का एक स्नैक-शॉट था और जिस नए स्थान पर हमने प्यार किया था';
+        arrLang['hi']['rest'] = 'श्री इंडियन रेस्तरां';
+        arrLang['hi']['rt'] = 'अन्य रेस्टोरेंट';
+        arrLang['hi']['re'] = 'शहर में रेस्टोरेंट';
+        arrLang['hi']['r'] = 'राज्य में रेस्टोरेंट';
+        arrLang['hi']['t'] = 'दो फैट भारतीयों';
+        arrLang['hi']['s'] = 'सैफरॉन';
+        arrLang['hi']['ra'] = 'रवि रेस्टोरेंट';
+        
+        $(document).ready(function (e) {
+            $('.translate').click(function () {
+                var lang = $(this).attr('id');
+
+                $('.lang').each(function (index,element) {
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
+    
+    
+    
+    
+<!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BenchNine:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+ <style >
+
+        body{
+
+        }
+
+        .col-lg-2 a:hover{
+
+            text-decoration: none;
+        }
+
+
+        .img{
+            width:80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+
+        /*menu*/
+
+
+        #menu ul{
+            list-style: none;
+            
+
+        }
+
+        #menu ul li {
+            border-bottom: white;
+            float: left;
+
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding-top: 0px;
+            line-height:35px;
+            position: relative;
+            color:#ff6600;
+            text-decoration-style: dashed;
+
+
+        }
+        #menu ul li a {
+            text-decoration: none;
+            
+            display: block;
+            height: 40px;
+            font-family: 'PathwayGothic', sans-serif;
+            font-size: 30px;
+            width: max-content;
+        }
+
+        #menu ul li a:hover{
+            color:#42F285;
+
+        }
+
+
+
+        #menu  ul ul{
+            position: absolute;
+            display: none;
+        }
+        #menu ul li:hover > ul{
+            display: block;
+            z-index: 99;
+
+        }
+
+        #menu ul ul li a{
+            border: none;
+           
+        }
+        #menu ul li ul li{
+            border: none;
+
+            margin-left: -5px;
+        }
+
+
+
+
+        #menu ul li ul li a:hover{
+            text-decoration: underline;
+            color:#42F285;
+        }
+
+        /*menu1*/
+
+        *{
+            margin: 0px;
+           
+            padding: 0px;
+        }
+        #menu1 ul{
+         color:#ff6600;
+            list-style: none;
+        }
+
+        #menu1 ul li {
+
+            float: left;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding-top: 0px;
+            line-height:35px;
+            position: relative;
+
+
+        }
+        #menu1 ul li a {
+            text-decoration: none;
+            color: #00ff00;
+            display: block;
+            height: 40px;
+            font-family: 'PathwayGothic', sans-serif;
+            font-size: 30px;
+            width: max-content;
+        }
+
+        #menu1 ul li a:hover{
+            color: #00ff00;
+            border-top: 4px solid black;
+        }
+
+        #menu1 ul ul{
+            position: absolute;
+            display: none;
+
+
+        }
+        #menu1 ul li:hover > ul{
+            display: block;
+            z-index: 99;
+
+        }
+        #menu1 ul li ul li a:hover{
+            text-decoration: underline;
+            color: #00ff00;
+        }
+
+        #menu1 ul li ul li{
+            width: 500 px;
+            color: #00ff00;
+            display: inline-block;
+        }
+
+
+
+
+        footer{
+            background: #3b3b3b;
+            margin-top: 100px;
+            padding: 30px 0;
+            width:100%;
+        }
+
+        footer:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        footer ul{
+            float: left;
+            padding: 0;
+            list-style-type: none;
+            color: #eee;
+            width: 23%;
+            margin-right: 2%;
+        }
+
+        footer li{
+            margin: 10px 0;
+        }
+
+        footer a{
+            color: #eee;
+            text-decoration: none;
+        }
+
+
+        .just ul li{
+            list-style: none;
+            margin: 10px;
+
+        }
+        .just ul li a{
+            font-family: 'Courgette', cursive;
+
+            font-size: 1.5em;
+        }
+
+        #just1 ul li a{
+            color: darksalmon;
+            font-family: 'Slabo27px', serif;
+        }
+        
+        button{
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+             font-size: 1.5em;
+            cursor:pointer;
+            overflow: hidden;
+        }
+    </style>
+
+    
+    </head>
+
+
+
+
+
+
+<body>
+	<div class="col-lg-2 col-xs-3" id="menu1">
+                    <ul>
+                        <li><a href="#"> <span>Languages</span></a>
+                            <ul>
+                                <li>    <div class="col-sm-6">
+        <button class="translate" id="en">English</button>
+    </div>
+    </li>
+                                <li>    
+    <div class="col-sm-6"><button class="translate" id="hi">Hindi</button>
+    </div></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+	
+    <div class="container-fluid" style=";">
+    <div class="row">
+            <h1 style="text-align: center; font-family: 'Pacifico'; font-size: 85px ; color: #EF4135">
+                <img src="cherry.png" style="height: 125px">
+                GoodFoodism
+            </h1>
+
+    </div>
+    <div class="row"  >
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3" style="text-align: center ;height: 70px; border-bottom: 1px solid rgba(239, 65, 53, 1); border-top: 1px solid rgba(239, 65, 53, 1);">
+            <div style="text-align: center; margin-top: 10% ; font-family: 'PathwayGothic'">
+                <h4 style="letter-spacing: 0.07em;;font-size: 25px ;"
+
+                ><STRONG> BELIEVE IN IT...</STRONG></h4>
+            </div>
+        </div>
+        <div class="col-lg-4" style="margin: 0px; height: 70px; ">
+            <div class="gg" style=" margin-top: 4%; margin-left: 20% ; width: 60%; height: 34px; border-bottom: 17px solid rgba(239, 65, 53, 1); border-top: 17px solid rgba(239, 65, 53, 1); border-right: 20px solid white; border-left: 20px solid white">
+                <h5 style="line-height:-2">
+
+                </h5>
+            </div>
+            <!--<h3 style="text-align: center; font-family: 'PathwayGothic'">
+                San Francisco/ Since 2007
+            </h3>-->
+        </div>
+        <div class="col-lg-3" style=" ; height: 70px; border-bottom: 1px solid rgba(239, 65, 53, 1); border-top: 1px solid rgba(239, 65, 53, 1);">
+            <div style="text-align: center; margin-top: 10% ; font-family: 'PathwayGothic'">
+                <h4 style="letter-spacing: 0.07em;font-size: 25px ;">
+                   <STRONG> WITH THE BEST SOLUTIONS...</STRONG>
+                </h4>
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+
+    </div>
+    <BR>
+
+    <nav style="border-bottom: 0.5px solid #d9d9d9;padding-bottom: 5px;" >
+        <div class="container" style="width:100%;">
+            <div class="row">
+            
+                <div class="col-lg-2 col-xs-3" id="menu1" >
+                                <ul> <li><a href="indexnew.html">Home</a></li>
+                                </ul>
+                      </div>
+                <div class="col-lg-2 col-xs-3" id="menu1">
+                    <ul>
+                        <li><a href="#"> <span>Eat Out</span></a>
+                            <ul>
+                                <li><a href="cafes.html">Cafes</a></li>
+                                <li><a href="eatout.html">Eat Out</a></li>
+                                <li><a href="goodfood.html">Good Food</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xs-3" id="menu1">
+                    <ul>
+                        <li>
+                            <a href="recipies.html">
+                                Recipes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                         
+
+                        
+                           
+                               
+           
+                <div class="col-lg-2 col-xs-3" id="menu1">
+                    <ul>
+                        <li><a href="#"> <span>Good Living</span></a>
+                            <ul>
+                                <li><a href="Ahmedabad.HTML">ahmedabad</a></li>
+                                <li><a href="mumbai.html">mumbai</a></li>
+                                <li><a href="chennai.html">chennai</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xs-3" id="menu1">
+                    <ul><li><a href="products.html">Product Solutions</a></li></ul>
+                       </div>
+           
+
+
+            </div>
+        </div>
+    </nav>
+
+</div>
+<br>
+ 
+<h1 class="lang" key="Ahmedabad" style="text-align: center; font-family: 'Pacifico'; font-size: 45px ; color: #EF4135"><img src="loc.png" style="height: 125px" >Ahmedabad</h1>
+                
+
+
+<div class="container">
+    <div class="jumbotron" style="background:white;">
+        <div class="row">
+            <p class="lang" key="Restaurants" style=" text-align:center;font-family: 'PatuaOne', cursive;font-size:5em; color: #1A52AE">Restaurants</p>
+            <div class="col-sm-6">
+                <article class="" >
+                    <img src="RE1.jpg" style="width:400px; heigth:400px;">
+                    <h3 class="lang" key="near" style="font-family: 'Acme', sans-serif; color: #EF4135">Restaurant Near Me</h3>
+                    <h4 
+                        <a class="lang" key="rest" href="fitness.html" style="font-family: 'DancingScript', cursive;font-size:2em; color: #1A52AE">
+                            Mr.Indian Restaurant
+                        </a>
+                    </h4>
+                    <p class="lang" key="text" style="font-size:1.5em;font-family: 'Questrial', sans-serif;">
+                      <STRONG>A snack-shot of the year that was and the new places we loved.</STRONG>  
+                    </p>
+
+                </article>
+            </div>
+            <div class="col-sm-6">
+                <article class="" >
+                    <img src="R2.jpg" style="width:100px; ">
+                    <h3 class="lang" key="rt" style="font-family: 'Acme', sans-serif; color: #EF4135;"> Other Restaurants</h3>
+                    <h4><a class="lang" key="t" href="balance.html" style="font-family: 'DancingScript', cursive;font-size:2em; color: #1A52AE">Two Fat Indians</a></h4>
+                </article>
+                <article class="" >
+                    <img src="R3.jpg" style="width:100px; ">
+                    <h3 class="lang" key="re" style="font-family: 'Acme', sans-serif; color: #EF4135;">Restaurants In The City</h3>
+                    <h4><a class="lang" key="s"  href="healthy.html"  style="font-family: 'DancingScript', cursive;font-size:2em; color: #1A52AE">Saffron</a></h4>
+                    
+                </article>
+                <article class="" >
+                    <img src="R4.jpg" style="width:100px; ">
+                    <h3 class="lang" key="r" style="font-family: 'Acme', sans-serif; color: #EF4135">Restaurents In The State</h3>
+                    <h4><a class="lang" key="ra"  href="blogs.html"  style="font-family: 'DancingScript', cursive;font-size:2em; color: #1A52AE">Ravi Restaurants</a></h4>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+                 
+           
+     <!-- footer-->
+
+
+<footer>
+    <div class="wrapper">
+        <ul>
+            <li>Ahmedabad Restaurant</li>
+            <li>3926 Anmoore Road</li>
+            <li>India, IN 10014</li>
+            <li>718-749-1714</li>
+        </ul>
+        <ul>
+            <li>Mumbai Restaurant</li>
+            <li>68, Road Couronne</li>
+            <li>75002 India</li>
+            <li>02.94.23.69.56</li>
+        </ul>
+        <ul>
+            <li><a href="BLOGS.HTML">Blog</a></li>
+            <li><a href="Careers.HTML">Careers</a></li>
+            <li><a href="Policy.HTML">Privacy Policy</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li><img src="images/white-logo.png" alt="logo"></li>
+            <li>&copy; All rights reserved 2017</li>
+            <LI> Good Foodism International India Pvt. Ltd. <br>
+                No. 14, Commissariat Road <br>
+                Bangalore - 560025 <br>
+                TOLL FREE NO.: 080-40311444 <br>
+                Email: writetous@GoodFoodism.com <bR>  
+        </ul>
+    </div>
+</footer>
+</body>
+    </html>
+
+
