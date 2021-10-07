@@ -495,11 +495,14 @@ margin-top: -10px;
 
 
 </style>
+<script>(function(w, d) { w.CollectId = "61540d0fe3ebf6511abdf539"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
 </head>
 	<body>
 		
 
 	<div id="page">
+
 		<nav class="Beyonsky-nav" role="navigation">
             <div class="top-menu">
                 <div class="container-fluid">
@@ -511,7 +514,7 @@ margin-top: -10px;
                             <ul>
                                 <li class="active"><a class="lang" key="hm1" href="index.php" style="font-size:18px ;">Home</a></li>
                                 <li  class="has-dropdown">
-                                    <a class="lang" key="hm11"  href="#"style="font-size:18px ;">Services</a>
+                                    <a class="lang" key="hm11"  href="error404.php"style="font-size:18px ;">Services</a>
                                     <ul class="dropdown">
                                         <li><a class="lang" key="hm2"  href="#">Tours</a></li>
                                         <li><a class="lang" key="hm3"  href="#">Destination</a></li>
